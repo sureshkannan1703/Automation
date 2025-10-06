@@ -1,0 +1,30 @@
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >-->
+<!--<suite name="MyFirstSuite" parallel="methods" thread-count="2">-->
+<!--    <test name="SimpleTest">-->
+<!--        <classes>-->
+<!--            <class name="pageObjectModel.test.LoginPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelByClasses" parallel="classes" thread-count="2">
+<test name="ClassLevelExecution">
+    <classes>
+        <class name="parallel.LoginTest"/>
+        <class name="parallel.DashboardTest"/>
+    </classes>
+</test>
+</suite>
+
+
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--<suite name="ParallelByMethods" parallel="methods" thread-count="3">-->
+<!--<test name="MethodLevelExecution">-->
+<!--    <classes>-->
+<!--        <class name="parallel.LoginTest"/>-->
+<!--    </classes>-->
+<!--</test>-->
+<!--</suite>-->
+
